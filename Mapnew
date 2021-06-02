@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class Mapnew {
+
+	public static void main(String[] args) {
+		HashMap hp = new HashMap(); 
+hp.put(01,"harekrishna");
+hp.put(02, "namo narayana");
+hp.put(03,"appa miss u");
+hp.put(04, "amma miss u");
+hp.put(05, "8903025216");
+System.out.println(hp);
+System.out.println(hp.get(04));
+System.out.println(hp.remove(02));
+System.out.println(hp.remove(05, "890302521"));
+System.out.println(hp);
+System.out.println(hp.entrySet());
+System.out.println(hp.keySet());
+System.out.println(hp.values());
+	}
+
+}
