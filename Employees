@@ -1,0 +1,26 @@
+pEmployees e1 = new Employees("Singaram", 23, 45000);
+    HashMap hm = new HashMap(); 
+    //hm.pu
+    hm.put(101, e1); 
+    hm.put(102, "Latha"); 
+    hm.put(103, "Vimal"); 
+    hm.put(103, "Vidhya"); 
+  //  System.out.println(hm);
+    hm.put(105, "Muthu");
+    
+    HashMap hm2 = new HashMap(); 
+    //System.out.println(hm2.putAll(hm));
+    
+    
+    System.out.println(hm.entrySet()); 
+    System.out.println(hm.keySet()); 
+    System.out.println(hm.values());
+    Object o = hm.clone(); 
+    HashMap hm3 = (HashMap) o; 
+    
+    
+    System.out.println("First --> " + hm); 
+  //System.out.println(hm.get(101)); 
+    System.out.println("Second --> " + hm.remove(101)); 
+    System.out.println("Third --> " + hm.remove(105, "Muthu"));
+    System.out.println("Fourth --> "+ hm);
