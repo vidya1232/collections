@@ -1,0 +1,47 @@
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+
+public class Map2 {
+String name;
+int ID,salary;
+public Map2(String name,int ID,int salary)
+{
+	this.name=name;
+	this.ID=ID;
+	this.salary=salary;
+}
+public String toString()
+{
+	return this.name+" "+this.ID+this.salary;
+	
+}
+	public static void main(String[] args) {
+Map2 e1 = new Map2("vidya", 01, 30000);
+Map2 e2 = new Map2("latha", 02, 30000);
+Map2 e3 = new Map2("singaram", 03, 30000);
+Map2 e4 = new Map2("vimal", 04, 30000);
+
+HashMap h = new HashMap();
+h.put(1, e1);
+h.put(2, e2);
+h.put(3, e3);
+h.put(4, e4);
+System.out.println("map---"+h);
+Set s = h.entrySet();
+System.out.println("set----"+s);
+Iterator i = s.iterator();
+while(i.hasNext())
+{
+	Map.Entry me =(Map.Entry)i.next();
+	if(me.getKey().equals(2))
+	{
+		e2 = new Map2("lathakalai",02,30000);
+		me.setValue(e2);
+	}
+}
+System.out.println(h);
+	}
+
+}
