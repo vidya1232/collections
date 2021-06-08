@@ -1,0 +1,27 @@
+package vidya;
+
+import java.util.Arrays;
+
+class Colle {
+
+	public static void main(String[] args) {
+	int [] br = {5,16,10,15,11};
+	//Arrays.sort(br);//natural ordering
+	Arrays.sort(br, 0, 5);
+	for(int i=0;i<br.length;i++)
+	{
+		System.out.print(br[i]+" ");
+	}
+	System.out.println();
+	
+	String [] names = {"vidya","punai","murugan","saratha","ajay"};
+	//Arrays.sort(names);
+	Comparatortt cc = new Comparatortt();
+	Arrays.sort(names, cc);
+	for(int i=0;i<names.length;i++)
+	{
+		System.out.print(names[i]+" ");
+	}
+	}
+
+}
