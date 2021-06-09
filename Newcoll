@@ -1,0 +1,39 @@
+package vidya;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+public class Newcoll {
+
+	public static void main(String[] args) {
+		
+		String name = "vidya murugan buvana vidya";
+		String [] c = name.split(" ");
+		//char [] c = name.toCharArray();
+		HashMap<String,Integer> h = new HashMap();
+		for(int i=0;i<c.length;i++)
+		{
+			if(h.containsKey(c[i])==false)
+			
+			h.put(c[i], 1);
+			else
+			{
+			int value = h.get(c[i]);
+			h.put(c[i], value+1);
+			}
+			
+		}
+		//System.out.println(h);
+		Set<Map.Entry<String,Integer>> s = h.entrySet();
+		for(Map.Entry<String,Integer> e:s)
+		{
+			if(e.getValue()==2)
+			{
+				e.setValue(99);
+			}
+			System.out.println(e);
+		}
+		
+	}
+
+
+	}
