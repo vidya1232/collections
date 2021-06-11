@@ -1,0 +1,16 @@
+package vidya;
+@FunctionalInterface 
+public interface Newlamb {
+
+	
+public void display();	
+default void call()
+{
+	System.out.println("calling");
+}
+static void calln()
+{
+	System.out.println("you are calling");
+}
+
+}
